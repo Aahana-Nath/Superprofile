@@ -1,10 +1,8 @@
 .env
-.venv/
-__pycache__/
-output/
 node_modules/
 .nuxt/
 .output/
 .data/
+.vercel/
 .DS_Store
 *.pdf

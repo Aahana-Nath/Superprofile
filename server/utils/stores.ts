@@ -167,7 +167,12 @@ export async function getStore(id: string): Promise<StoredRecord | null> {
 }
 
 export async function saveStore(id: string, record: StoredRecord) {
-  await storage().setItem(id, record)
+  try {
+    await storage().setItem(id, record)
+  } catch (e) {
+    console.error('[stores] save failed', e)
+    throw createError({ statusCode: 503, statusMessage: "We couldn't save your page right now. Please try again in a minute." })
+  }
 }
 
 export function tokenMatches(a: string, b: string) {
