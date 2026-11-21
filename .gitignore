@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+output/
+node_modules/
+.nuxt/
+.output/
+.data/
+.DS_Store
+*.pdf

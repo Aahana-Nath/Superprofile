@@ -1,0 +1,5 @@
+requests>=2.31
+pydantic>=2.5
+python-dotenv>=1.0
+anthropic>=0.40        # only needed if LLM_PROVIDER=anthropic
+openai>=1.40           # only needed if LLM_PROVIDER=openai
