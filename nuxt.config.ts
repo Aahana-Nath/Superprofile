@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: false },
+  modules: ['@vercel/analytics'],
   css: ['~/assets/main.css'],
   routeRules: {
     // The editor lives in the browser tab's storage, so render it on the client only.
